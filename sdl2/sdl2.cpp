@@ -81,14 +81,8 @@ int main(int argc, char** argv)
         Color color = Color{ 1,2,3,4 };
         vector<Shape*> items;
         Rectangle* rect1 = new Rectangle("First Rectangle", 100, 100, 100, 100, Color{123,123,123,255});
-        Rectangle* rect2 = new Rectangle("Second Rectangle", 230, 100, 100, 100, Color{ 123,123,123,255 });
-        Rectangle* rect3 = new Rectangle("Third Rectangle", 360, 100, 100, 100, Color{ 123,123,123,255 });
-        Rectangle* rect4 = new Rectangle("Fourth Rectangle", 490, 100, 100, 100, Color{ 123,123,123,255 });
-        
+
         items.push_back(rect1);
-        items.push_back(rect2);
-        items.push_back(rect3);
-        items.push_back(rect4);
         for (Shape* it : items)
         {
             it->Draw();
